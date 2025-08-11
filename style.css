@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.navbar {
+    height: 80px;
+    background-color: #0f1111;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+ 
+}
+
+.section {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;  
+    width: 100%;                    
+}
+
+.section li {
+    flex: 1;                        
+    text-align: center;            
+}
+
+.section li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 80px;           
+}
+
+.img {
+    height: 460px;
+    width: 100vw; 
+    background-image: url("DOT.jpg");
+    background-size: cover;            /*Fills entire box*/
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    z-index: 0;
+    display: flex;    
+}
+.img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /* makes background less visible */
+    z-index: 0;
+}
+.myphoto img {
+  width: 300px;
+  height: 320px;
+  object-fit: cover;
+  z-index: 1;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 100%;
+  
+  
+}
+.mylogo img{
+    height: 80px;
+    width: 120px;
+}
+.border:hover{
+    transition-property: all;
+    color: blue;
+    background-color: rgb(35, 50, 50);
+}
+.box{
+    display: flex;
+    margin-left: auto;
+    height: 450px;
+    width: 500px;
+    margin-top: 50px;
+    background-color: transparent;
+    box-sizing: border-box;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    height: 80px;
+    background-color: #0f1111;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+
+.section {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;  
+    width: 100%;                    
+}
+
+.section li {
+    flex: 1;                        
+    text-align: center;            
+}
+
+.section li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 80px;           
+}
+
+.img {
+    position: relative;
+    height: 460px;
+    width: 100vw; 
+    background-image: url("DOT.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+}
+
+/* Dark overlay on background */
+.img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 3, 3, 0.549); /* makes background less visible */
+    z-index: 0;
+}
+
+.myphoto img {
+    position: relative;
+    width: 300px;
+    height: 320px;
+    object-fit: cover;
+    z-index: 1;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 100%;
+}
+
+.mylogo img {
+    height: 80px;
+    width: 120px;
+}
+
+.border:hover {
+    transition-property: all;
+    color: blue;
+    background-color: rgb(35, 50, 50);
+}
+
+.box {
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    height:auto;
+    max-width: 500px;
+    background-color: transparent; /* light background for text */
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.box h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.box-1{
+    display: flex;
+    align-items: center;
+}
+p:hover{
+    color: red;
+}
