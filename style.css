@@ -60,8 +60,8 @@ html,body{
     z-index: 0;
 }
 
-.myphoto{
-  background-image: url("ajay2.jpg");
+.myphoto img{
+
   background-size: cover;
   background-repeat: no-repeat;
     position: relative;
@@ -71,6 +71,13 @@ html,body{
     border-radius: 100%;
     border-width: 2px solid;
     border-color: #880a0a;
+    display: block;
+  border-radius: 100%;
+  border: 5px solid rgb(179, 22, 184);   
+  display: inline-block;
+  padding: 5px;                 /* Outer border width */
+  background-color: rgb(255, 0, 0);       /* Outer border color */
+  border-radius: 100%;      
 }
 
 .mylogo img {
@@ -138,6 +145,7 @@ h1{
     text-decoration: underline;
 }
 p{
+    font-size: 20px;
     text-align: center;
 }
 h2{
@@ -159,6 +167,7 @@ h2{
 }
 
 .skill-c {
+  height: 260px;
   flex-basis: 30%;
   background-color: #c5c6c5b3; /* keep your color */
   border-radius: 10px;
@@ -173,17 +182,19 @@ h2{
 }
 
 .skill-c:hover {
+  background-color: rgba(5, 201, 255, 0.836);
+  color: rgb(255, 255, 255);
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* 1 column on small screens */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .skill-c {
     flex: 0 0 90%;
     max-width: 90%;
   }
-} */
+}
 
 
 
@@ -195,13 +206,14 @@ h3{
 }
 .skl{
   font-style: normal;
-  color: #0f1111;
+  color: #880a0a;
   margin-top: 5%;
 }
 i{
   color: rgb(255, 0, 55);
 }
-.education-section{
+
+.edu-container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -209,24 +221,50 @@ i{
   gap: 20px;
   padding-top: 50px;
 }
-.education{
-  background-image: url("shivaji.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 80%;
-  height: 300px;
+
+.edu-card {
+  height: 260px;
   flex-basis: 30%;
-  background-color: #c5c6c5b3; /* keep your color */
   border-radius: 10px;
-  padding: 20px;
-  box-sizing: border-box;
-  text-align: center;
+  overflow: hidden;
+  position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  /* 3 columns */
- 
 }
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.edu-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.edu-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(12, 22, 31, 0.5);
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 4px rgba(6, 185, 255, 0.6);
+}
+
+/* Responsive: 1 column on small screens */
+@media (max-width: 768px) {
+  .edu-card {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+}
+
 .School{
   color: darkolivegreen;
   text-decoration: none;
@@ -270,19 +308,27 @@ i{
 }
 
 .footer-icons a {
-  font-size: 20px;
+  position: relative;
+  font-size: 1.3rem;
   color: #020101; /* Optional */
 }
-.image{
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("ajay.jpg");
-  border-radius: 100%;
-  height: 200px;
-  width: 180px;
-  background-color: antiquewhite;
+.footer-icons a:hover{
+  font-size: 30px;
+}
+.image {
+  display: inline-block;
+  padding: 3px;                 /* Outer border width */
+  background-color: rgba(0, 0, 255, 0.348);       /* Outer border color */
+  border-radius: 50%;
 }
 
+.image img {
+  display: block;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid rgba(247, 1, 255, 0.264);         /* Inner border */
+}
 
 
 
