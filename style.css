@@ -1,86 +1,7 @@
-* {
+html,body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-.navbar {
-    height: 80px;
-    background-color: #0f1111;
-    display: flex;
-    justify-content: center;  
-    align-items: center;
- 
-}
-
-.section {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;  
-    width: 100%;                    
-}
-
-.section li {
-    flex: 1;                        
-    text-align: center;            
-}
-
-.section li a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 80px;           
-}
-
-.img {
-    height: 460px;
-    width: 100vw; 
-    background-image: url("DOT.jpg");
-    background-size: cover;            /*Fills entire box*/
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
-    z-index: 0;
-    display: flex;    
-}
-.img::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5); /* makes background less visible */
-    z-index: 0;
-}
-.myphoto img {
-  width: 300px;
-  height: 320px;
-  object-fit: cover;
-  z-index: 1;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 100%;
-  
-  
-}
-.mylogo img{
-    height: 80px;
-    width: 120px;
-}
-.border:hover{
-    transition-property: all;
-    color: blue;
-    background-color: rgb(35, 50, 50);
-}
-.box{
-    display: flex;
-    margin-left: auto;
-    height: 450px;
-    width: 500px;
-    margin-top: 50px;
-    background-color: transparent;
-    box-sizing: border-box;
-
+    overflow-x: hidden;
 }
 * {
     margin: 0;
@@ -139,25 +60,22 @@
     z-index: 0;
 }
 
-.myphoto img {
+.myphoto{
+  background-image: url("ajay2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
     position: relative;
     width: 300px;
     height: 320px;
-    object-fit: cover;
     z-index: 1;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 100%;
+    border-radius: 100%;
+    border-width: 2px solid;
+    border-color: #880a0a;
 }
 
 .mylogo img {
     height: 80px;
     width: 120px;
-}
-
-.border:hover {
-    transition-property: all;
-    color: blue;
-    background-color: rgb(35, 50, 50);
 }
 
 .box {
@@ -181,10 +99,191 @@
     font-size: 16px;
     line-height: 1.5;
 }
-.box-1{
-    display: flex;
-    align-items: center;
+
+.parent{
+    margin-top: 50px;
+  width: 370px;
+  height: 200px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease-in;
+  margin-right: 20px;
 }
-p:hover{
-    color: red;
+.parent:hover {
+  transform: translateY(-2px) scale(1.04); /* Move up and slightly enlarge */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
+
+
+.section a:hover{
+    color: blue;
+}
+.flag{
+    background-image: url("flag.png");
+    height: 80px;
+    width: 120px;
+    background-size: cover;
+    
+}
+h3{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: rgb(0, 255, 217);
+    text-decoration: underline;
+}
+p{
+    text-align: center;
+}
+h2{
+    color: bisque;
+    text-align: center;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+
+.skill-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 50px;
+}
+
+.skill-c {
+  flex-basis: 30%;
+  background-color: #c5c6c5b3; /* keep your color */
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* 3 columns */
+ 
+}
+
+.skill-c:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 1 column on small screens */
+/* @media (max-width: 768px) {
+  .skill-c {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+} */
+
+
+
+
+h3{
+  color: rgba(30, 30, 62, 0.826);
+  font-size: 25px;
+  margin-bottom: 5%;
+}
+.skl{
+  font-style: normal;
+  color: #0f1111;
+  margin-top: 5%;
+}
+i{
+  color: rgb(255, 0, 55);
+}
+.education-section{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 50px;
+}
+.education{
+  background-image: url("shivaji.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 300px;
+  flex-basis: 30%;
+  background-color: #c5c6c5b3; /* keep your color */
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* 3 columns */
+ 
+}
+.School{
+  color: darkolivegreen;
+  text-decoration: none;
+}
+.footer {
+  max-width:100%;       /* Limit content width */
+  margin: 0 auto;         /* Center horizontally */
+  padding: 20px;
+  text-align: center;    /* Equal left/right alignment */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.footer .about {
+  color: #880a0a;
+  font-size: 1.8rem;
+  font-weight:800;
+  text-align: center;
+  margin-top: 5%;     /* Center the heading */
+  margin-bottom: 2%;
+}
+
+.footer .about-me {
+  font-size: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(26, 56, 85);
+}
+
+
+.footer .contact{
+  font-size: 1.8rem;
+  color: #880a0a;
+  font-weight: 800;
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 55px; /* Creates exact spacing between icons */
+}
+
+.footer-icons a {
+  font-size: 20px;
+  color: #020101; /* Optional */
+}
+.image{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("ajay.jpg");
+  border-radius: 100%;
+  height: 200px;
+  width: 180px;
+  background-color: antiquewhite;
+}
+
+
+
+
+
